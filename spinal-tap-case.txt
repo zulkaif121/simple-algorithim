@@ -1,0 +1,7 @@
+function spinalCase(str) {
+str=str.split(/[^a-zA-Z]|(?=[A-Z])/);
+let str2=str.join('-');
+  return str2.toLowerCase();
+}
+
+console.log(spinalCase('AllThe-small Things'));
